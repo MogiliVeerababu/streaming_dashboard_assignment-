@@ -1,7 +1,13 @@
 "use client";
 
+
+
+
 import MovieCard from "./MovieCard";
-import { Movie } from "../types/movie";
+import { Movie } from "../../types/movie";
+
+
+
 
 export default function MovieRow({ title, movies }: { title: string; movies: Movie[] }) {
   return (
