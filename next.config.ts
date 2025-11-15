@@ -2,6 +2,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    turbo: false, // disable turbopack completely
+  },
+  productionBrowserSourceMaps: false, // stops invalid source-map warnings
   images: {
     remotePatterns: [
       {
